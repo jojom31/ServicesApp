@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@using ServicesApp.Core;
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Business List :</h1>
+    @foreach (Services services in this.Model.BusinessList)
+    {
+        <div>
+            <h2>Business Name:</h2>
+                @services.Name
+            
+        </div>
+        <div>
+            <h2>Business Type</h2>
+            @services.Type
+        </div>
+
+        
+    }
+</div>

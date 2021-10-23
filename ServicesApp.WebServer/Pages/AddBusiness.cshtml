@@ -1,0 +1,16 @@
+﻿@page
+@model ServicesApp.WebServer.Pages.AddBusinessModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+
+
+
+<form asp-action="post">
+    <label>Business Name</label>
+    <input asp-for="@this.Model.AddedServices.Name" />
+    <br />
+    <label>Business Type</label>
+    <input asp-for="@this.Model.AddedServices.Type" />
+    <input type="submit" />
+</form>
